@@ -1,1 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mini-C Compiler</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="dark">
+    <main class="app">
+      <section class="topbar">
+        <div class="title-block">
+          <h1>Mini-C Compiler</h1>
+          <p>Lexer, parser, semantic analyzer, symbol table, and TAC generator</p>
+        </div>
+        <div class="top-actions">
+          <div class="status" id="status">Ready</div>
+          <button type="button" id="themeToggle" aria-pressed="true">Light</button>
+          <button type="button" id="clearOutput">Clear</button>
+          <button type="button" class="primary" id="run">Run</button>
+        </div>
+      </section>
 
+      <section class="workspace">
+        <div class="pane editor-pane">
+          <div class="pane-header">
+            <h2>Source</h2>
+            <label class="example-picker">
+              <span>Example</span>
+              <select id="exampleSelect" aria-label="Load example program"></select>
+            </label>
+          </div>
+          <div class="editor">
+            <pre class="line-numbers" id="lineNumbers" aria-hidden="true">1</pre>
+            <textarea id="source" spellcheck="false" aria-label="Mini-C source code"></textarea>
+          </div>
+        </div>
+
+        <div class="pane output-pane">
+          <div class="pane-header">
+            <h2>Output</h2>
+            <div class="stage-tabs" role="tablist" aria-label="Compiler stages">
+              <button type="button" class="stage" data-stage="output">Output</button>
+              <button type="button" class="stage active" data-stage="all">All</button>
+              <button type="button" class="stage" data-stage="tokens">Tokens</button>
+              <button type="button" class="stage" data-stage="ast">AST</button>
+              <button type="button" class="stage" data-stage="symbols">Symbols</button>
+              <button type="button" class="stage" data-stage="tac">TAC</button>
+            </div>
+          </div>
+          <pre id="output">Click Run to compile the current Mini-C program.</pre>
+        </div>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
