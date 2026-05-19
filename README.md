@@ -33,7 +33,7 @@ The app is dependency-free and runs with the Python standard library.
 The project is hosted on Hugging Face Spaces:
 
 ```text
-https://puneeth-rv-auracompiler.hf.space
+https://Vishruth Keshavan-HS-auracompiler.hf.space
 ```
 
 To run locally:
