@@ -6,7 +6,7 @@ colorFrom: green
 colorTo: blue
 sdk: docker
 pinned: false
----
+--- 
 
 # AuraCompiler: Mini-C Compiler 
 
