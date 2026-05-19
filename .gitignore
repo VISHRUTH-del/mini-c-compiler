@@ -1,23 +1,18 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
-.vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-files
-*.bclicense
-*.flf
-#Test results file
-TestResults.xml
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+
+# Ignore all markdown except README
+*.md
+!README.md
+
+# Assignment PDF
+docs/CSC301A_Mini_C_Compiler_Assignment.pdf
+docs/screenshots/
+
+# Tests and outputs
+tests/
+outputs/
