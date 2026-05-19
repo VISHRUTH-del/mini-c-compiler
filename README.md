@@ -1,7 +1,6 @@
 ---
 title: AuraCompiler
-emoji: 
-<img width="21" height="22" alt="image" src="https://github.com/user-attachments/assets/42fcd445-0686-4b79-9800-16e4dbded510" />
+emoji:😎
 
 colorFrom: green
 colorTo: blue
